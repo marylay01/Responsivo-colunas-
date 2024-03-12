@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;     /**/
+}
+
+body{ /*customizar o tamanho e a direção das colunas no body*/
+    margin: 0; /*margem que deixa o footer e o header "colados" noespaço da tela */
+    min-height: 100vh; /*corresponde a 100% do espaçp do nosso dispositivo, para que a pagian ocupe toda a tela */
+    display: flex; /*move os itens para o lado*/ 
+    flex-direction: column; /*direção do comando flex*/
+    justify-content: space-between; /*para ter espaço entre as colunas*/
+}
+
+
+header{ /*customizar o tamanho e a direção das colunas no header*/
+    background-color: rgb(153, 199, 200); /*cor da barra do cabeçalho*/
+    font-size: large; /*largura do texto*/
+    font-style: oblique; /*fonte a do texto*/
+      
+}
+main{   /*customizar as colunas do meio no quesito espaçamento*/
+    height: calc(100vh - 150px); /*a altura das colunas, espaçamento da tela menos 150px de?*/
+    display: flex; 
+     /*espaço ao redor das colunas entre o footer e o header*/
+    gap: 10px; /*espaço entre as colunas*/
+    padding: 10px 0; /*espaço entre a tela e coluna, distância entre o conteúdo de um elemento e as suas bordas*/
+    
+}
+main div{                            /*para cada coluna do meio individualmente */
+    background-color: rgb(189, 217, 218); 
+    width: 33% ;            
+    height: 100%
+
+}
+@media (max-width:768px) {
+    main div{
+        width: 45%;
+    }
+}
+
+@media (max-width:576px){
+    main div{
+        width: 100%
+    }
+}
+
+footer{  
+    background-color: rgb(153, 199, 200);
+}
+
+
+header, footer{ /*altura dos dois*/
+    height: 60px;
+}
