@@ -20,7 +20,7 @@ header{ /*customizar o tamanho e a direção das colunas no header*/
 main{   /*customizar as colunas do meio no quesito espaçamento*/
     height: calc(100vh - 150px); /*a altura das colunas, espaçamento da tela menos 150px de?*/
     display: flex; /*espaço ao redor das colunas entre o footer e o header*/
-    gap: 10px; /*espaço entre as colunas*/
+    gap: 10px; /*espaço entre as colunas */
     padding: 10px 0; /*espaço entre a tela e coluna, distância entre o conteúdo de um elemento e as suas bordas*/
     flex-wrap: wrap;
     justify-content: center;
@@ -29,7 +29,7 @@ main{   /*customizar as colunas do meio no quesito espaçamento*/
 }
 main div{                            /*para cada coluna do meio individualmente */
     background-color: rgb(189, 217, 218); 
-    width: 30% ;            
+    width: 32.5% ;            
     height: 100%;
     
 }
